@@ -57,10 +57,8 @@ async function main() {
 main();
 
 function restRequest(arguments) {
-
     const data = querystring.stringify(arguments);
     return postReq(hostName, apiPath, data)
-
 }
 
 
