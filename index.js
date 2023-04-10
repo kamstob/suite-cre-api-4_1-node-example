@@ -25,7 +25,7 @@ async function main() {
         });
 
         user = JSON.parse(user);
-        
+
         console.log({user});
 
         //set a new lead
@@ -45,13 +45,13 @@ async function main() {
                 }
             })
         });
-    
+
         console.log({result});
 
     } catch (error) {
         console.log('ERROR:', error);
     }
-    
+
 }
 
 main();
@@ -59,11 +59,6 @@ main();
 function restRequest(arguments) {
 
     const data = querystring.stringify(arguments);
-
-    // postReq(hostName, apiPath, data)
-    //     .then(res => console.log('RESULT: ',res))
-    //     .catch(err => console.log('ERROR:', err));
-
     return postReq(hostName, apiPath, data)
 
 }
